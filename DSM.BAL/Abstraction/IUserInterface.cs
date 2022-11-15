@@ -12,10 +12,11 @@ namespace DSM.BAL.Abstraction
 {
     public interface IUserInterface
     {
-        List<SignUp> GetUser();
+        List<UserDisplay> GetUser();
         string SignUp(SignUp signUp);
 
         bool LogIn(LogIn login);
         string ForgetPassword(ChangePassword changePassword);
+
     }
 }

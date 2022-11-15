@@ -3,7 +3,6 @@ using DSM.Entities.Models;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 using DSM.BAL.Abstraction;
-using DSM.BAL.Abstraction;
 
 var builder = WebApplication.CreateBuilder(args);
 
