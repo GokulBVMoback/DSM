@@ -28,6 +28,11 @@ namespace DSM.API.Controllers
             _userService =userService;
         }
 
+        public UserController(IUserInterface userService)
+        {
+            _userService = userService;
+        }
+
         // GET: api/<UserController>
         [HttpGet]
         public JsonResult UserDetails()
@@ -43,14 +48,6 @@ namespace DSM.API.Controllers
             }
         }
 
-        // GET api/<UserController>/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        // POST api/<UserController>
         [HttpPost]
         [Route("SignUp")]
 

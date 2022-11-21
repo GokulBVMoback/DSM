@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSM.BAL", "DSM.BAL\DSM.BAL.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSM.Entities", "DSM.Entities\DSM.Entities.csproj", "{C8F24211-3F93-41EA-8FF1-6173FCA22A0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSM.Model", "DSM.Model\DSM.Model.csproj", "{2EFF0CB0-07CE-4B59-BA55-36082AD2619E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSM.Model", "DSM.Model\DSM.Model.csproj", "{2EFF0CB0-07CE-4B59-BA55-36082AD2619E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSM.APITests", "DSM.BALTests\DSM.APITests.csproj", "{EC1AF321-21DF-45FE-8099-AFCCB654D9E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2EFF0CB0-07CE-4B59-BA55-36082AD2619E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EFF0CB0-07CE-4B59-BA55-36082AD2619E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EFF0CB0-07CE-4B59-BA55-36082AD2619E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1AF321-21DF-45FE-8099-AFCCB654D9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1AF321-21DF-45FE-8099-AFCCB654D9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1AF321-21DF-45FE-8099-AFCCB654D9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1AF321-21DF-45FE-8099-AFCCB654D9E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

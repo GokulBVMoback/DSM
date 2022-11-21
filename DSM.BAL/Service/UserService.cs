@@ -53,13 +53,10 @@ namespace DSM.BAL.Service
         public string SignUp(SignUp signUp)
         {  
             string encryptPassword=encryptService.EncodePasswordToBase64(signUp.Password);
-            //string encryptConPassword = encryptService.EncodePasswordToBase64(signUp.ConfirmPassword);
             signUp.Password=encryptPassword;
             signUp.CreatedDate=DateTime.Now;
             signUp.UpdatedDate=null;
             signUp.Active = true;
-            //if (obj.Password == obj.ConfirmPassword)
-            //{
                 if (_dbContext.SignUps.Count() == 0)
                 {
                     _dbContext.SignUps.Add(signUp);
@@ -77,11 +74,6 @@ namespace DSM.BAL.Service
             {
                 return "Your Email already registered. Please Log in";
             }
-            //}
-            //else
-            //{
-            //    return "Password and Confirm password not matched";
-            //}
         }
         public bool LogIn(LogIn login)
         {
